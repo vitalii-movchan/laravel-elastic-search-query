@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Elastic\Elasticsearch\Query\Composition\Builder\Conceptual\Contract;
 
+use Conceptual;
 use Elastic;
 
 /**
  * @interface  Composition
- * @extends Elastic\Elasticsearch\Query\Composition\Conceptual\Contract\Component
+ * @extends Concpetual\Composition\Contract\Component
  */
-interface Component extends Elastic\Elasticsearch\Query\Composition\Conceptual\Contract\Component
+interface Component extends Concpetual\Composition\Contract\Component
 {
 }

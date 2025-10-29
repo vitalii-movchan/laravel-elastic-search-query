@@ -3,6 +3,10 @@
   "type": "project",
   "repositories": [
     {
+      "url": "https://github.com/vitalii-movchan/conceptual",
+      "type": "git"
+    },
+    {
       "url": "https://github.com/vitalii-movchan/laravel-elastic-search-indice",
       "type": "git"
     }
@@ -11,7 +15,8 @@
     "php": "^8.2",
     "illuminate/collections": "^12.36",
     "illuminate/validation": "^12.36",
-    "laravel/elastic-search-indice": "dev-main"
+    "laravel/elastic-search-indice": "dev-main",
+    "core/conceptual": "dev-main"
   },
   "autoload": {
     "psr-4": {

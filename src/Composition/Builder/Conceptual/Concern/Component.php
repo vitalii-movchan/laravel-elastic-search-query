@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Elastic\Elasticsearch\Query\Composition\Builder\Conceptual\Concern;
 
+use Concpetual;
 use Elastic;
 
 /**
@@ -11,10 +12,9 @@ use Elastic;
  *
  * @class Component
  *
- * @uses Elastic\Elasticsearch\Query\Composition\Conceptual\Concern\Component
+ * @uses Conceptual\Composition\Concern\Component
  */
 trait Component
 {
-    use Elastic\Elasticsearch\Query\Composition\Conceptual\Concern\Component;
-    use  Elastic\Elasticsearch\Query\Composition\Conceptual\Concern\Component;
+    use Conceptual\Composition\Concern\Component;
 }

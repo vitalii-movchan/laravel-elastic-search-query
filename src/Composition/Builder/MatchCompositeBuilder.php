@@ -12,21 +12,21 @@ use Illuminate\Validation\ValidationException;
  * @implements Query\Composition\Builder\Conceptual\Contract\Component
  * @implements Query\Composition\Builder\Contract\MatchCompositeBuilder
  *
- * @uses Indices\Mappings\Field\Attribute\Concern\Field
+ * @uses Elastic\Elasticsearch\Indice\Mappings\Field\Attribute\Concern\Field
  * @uses Elastic\Elasticsearch\Query\Composition\Builder\Conceptual\Concern\Component
  *
  *
  * @property Elastic\Elasticsearch\Query\Builder\Contract\MatchQueryBuilder matchQueryBuilder
  */
 class MatchCompositeBuilder implements
-    Indices\Mappings\Field\Attribute\Contract\Field,
+    Elastic\Elasticsearch\Indice\Mappings\Field\Attribute\Contract\Field,
     Elastic\Elasticsearch\Query\Composition\Builder\Conceptual\Contract\Component,
     Elastic\Elasticsearch\Query\Composition\Builder\Contract\MatchCompositeBuilder,
     Elastic\Elasticsearch\Query\Composition\Builder\Event\Contract\Fillable,
     Elastic\Elasticsearch\Query\Composition\Builder\Event\Contract\Filterable
 {
     // Indices
-    use Indices\Mappings\Field\Attribute\Concern\Field;
+    use Elastic\Elasticsearch\Indice\Mappings\Field\Attribute\Concern\Field;
 
     // Composition builders
     use Elastic\Elasticsearch\Query\Composition\Builder\Conceptual\Concern\Component;
@@ -37,11 +37,11 @@ class MatchCompositeBuilder implements
     private Elastic\Elasticsearch\Query\Builder\Contract\MatchQueryBuilder $matchQueryBuilder;
 
     /**
-     * @param Indices\Mappings\Field\Entity\Contract\Field $field
+     * @param Elastic\Elasticsearch\Indice\Mappings\Field\Entity\Contract\Field $field
      * @param Elastic\Elasticsearch\Query\Builder\Contract\MatchQueryBuilder $matchQueryBuilder
      */
     public function __construct(
-        Indices\Mappings\Field\Entity\Contract\Field $field,
+        Elastic\Elasticsearch\Indice\Mappings\Field\Entity\Contract\Field $field,
         Elastic\Elasticsearch\Query\Builder\Contract\MatchQueryBuilder $matchQueryBuilder
     ) {
         $this->field = $field;
