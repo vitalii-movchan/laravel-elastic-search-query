@@ -9,9 +9,9 @@ use Elastic;
 
 /**
  * @interface Composition
- * @extends Concpetual\Composition\Contract\Composite
+ * @extends Conceptual\Composition\Contract\Composite
  */
-interface Composite extends Concpetual\Composition\Contract\Composite
+interface Composite extends Conceptual\Composition\Contract\Composite
 {
     /**
      * @return void

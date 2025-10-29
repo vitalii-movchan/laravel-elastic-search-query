@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace Elastic\Elasticsearch\Query\Composition\Builder\Event\Concern;
 
+use Conceptual;
 use Elastic;
-use Sxope\Infra\Support;
 
 /**
  * @class Fillable
  */
 trait Filterable
 {
-    use Support\Composition\Conceptual\Concern\Composite;
+    use Conceptual\Composition\Concern\Composite;
 
     /**
      * @return void

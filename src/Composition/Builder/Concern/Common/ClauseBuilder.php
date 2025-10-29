@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Elastic\Elasticsearch\Query\Composition\Builder\Concern\Common;
 
 use Elastic;
+use Exception;
 
 /**
  * @trait
@@ -20,6 +21,7 @@ trait ClauseBuilder
     /**
      * @param Elastic\Elasticsearch\Query\Composition\Builder\Contract\BoolCompositeBuilder $boolBuilder
      * @return $this
+     * @throws Exception
      */
     public function addBoolCompositeBuilder(Elastic\Elasticsearch\Query\Composition\Builder\Contract\BoolCompositeBuilder $boolBuilder): static
     {
@@ -29,6 +31,7 @@ trait ClauseBuilder
     /**
      * @param Elastic\Elasticsearch\Query\Composition\Builder\Contract\MatchCompositeBuilder $matchBuilder
      * @return $this
+     * @throws Exception
      */
     public function addMatchCompositeBuilder(Elastic\Elasticsearch\Query\Composition\Builder\Contract\MatchCompositeBuilder $matchBuilder): static
     {
