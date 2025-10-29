@@ -1,0 +1,28 @@
+{
+  "name": "laravel/elastic-search-query",
+  "type": "project",
+  "repositories": [
+    {
+      "url": "https://github.com/vitalii-movchan/laravel-elastic-search-indice",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/collections": "^12.36",
+    "illuminate/validation": "^12.36",
+    "laravel/elastic-search-indice": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elastic\\Elasticsearch\\Query\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
